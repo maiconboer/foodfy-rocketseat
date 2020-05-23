@@ -1,0 +1,270 @@
+:root {
+    --light-background: #fff;
+    --pink-logo: #FBDFDB;
+    --light-footer: #eee;
+    --font-black: #111;
+    --font-gray: #777;
+    --font-gray-dark: #444;
+    --font1: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font1);
+    color: var(--font-black);
+}
+
+img {
+    width: 100%;
+}
+
+/* === HOME === */
+.header,
+.section-slogan-logo,
+.most-accessed {
+    max-width: 940px;
+    margin: 0 auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    padding: 36px 20px;
+}
+
+.header h1 {
+    font-family: serif;
+}
+
+.header h1 a {
+    text-decoration: none;
+    color: var(--font-black)
+}
+
+.header h1 a:active {
+    color: var(--font-black);
+}
+
+.links-pages ul {
+    display: flex;
+}
+
+.links-pages ul li {
+    list-style: none;
+}
+
+.links-pages ul li a {
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.links-pages ul li a:active {
+    color: var(--font-black);
+}
+
+.section-slogan-logo {  
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    width: calc(90% - 20px);
+    height: 366px;
+    background-color: var(--pink-logo);
+    border-radius: 30px;
+    margin: 0 auto 50px;
+    padding: 20px;
+}
+
+.slogan h2 {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.slogan p {
+    max-width: 316px;
+    line-height: 28px;
+}
+
+.logo img {
+   margin-bottom: -70px;
+}
+
+.most-accessed {
+    margin-bottom: 100px;
+}
+
+.most-accessed h2 {
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.recipes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.recipe img {
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.recipe h3 {
+    font-size: 18px;
+}
+
+.recipe p {
+    color: var(--font-gray);
+    font-size: 14px;
+}
+
+.footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: var(--light-footer);
+    color: var(--font-gray);
+    font-size: 14px;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+}
+/* END HOME */
+
+/* === SOBRE === */
+.about,
+.how-all-began,
+.our-recipes {
+    max-width: 940px;
+    margin: 30px auto 20px;
+    padding: 20px;
+}
+
+.our-recipes {
+    margin-bottom: 80px;
+}
+
+.about h2,
+.how-all-began h2,
+.our-recipes h2 {
+    margin-bottom: 20px;
+}
+
+.about p,
+.how-all-began p,
+.our-recipes p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 28px;
+    color: var(--font-gray-dark)
+}
+/* === END SOBRE === */
+
+/* === RECEITAS === */
+.recipes {
+    margin: 0 auto;
+    max-width: 940px;
+}
+
+.recipe img {
+    cursor: pointer;
+}
+/* === END RECEITAS === */
+
+/* === 404 === */
+.slogan .text-not-found {
+    font-size: 24px;
+}
+/* === END 404 === */
+
+/* === DISH === */
+section.recipe {
+    max-width: 940px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+section.ingredients,
+section.preparation,
+section.information {
+    padding: 20px;
+}
+
+section.ingredients h2,
+section.preparation h2,
+section.information h2 {
+    margin-bottom: 20px;
+}
+
+section.recipe img {
+    cursor: auto;
+}
+
+section.recipe h3 {
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+section.recipe p,
+section.recipe li {
+    line-height: 26px;
+    color: var(--font-black)
+}
+
+section.recipe > p {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.text-hide {
+    color: var(--font-gray);
+    text-decoration: none;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+section.information {
+    margin-bottom: 80px;
+}
+
+/* === END DISH === */
+
+/* === MODILE === */
+@media screen and (max-width: 768px) {
+    /* HOME */
+    .most-accessed {
+        text-align: center;
+    }
+    
+    .recipes {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .recipe {
+        margin-bottom: 20px;
+    }
+
+    .recipe h3 {
+        margin-top: -10px;
+    }
+    /* END HOME */
+
+    /* RECIPES */
+    .all-recipes {
+        text-align: center;
+    }
+    /* END RECIPES */
+}

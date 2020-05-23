@@ -1,0 +1,39 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Colocar titulo dinamico</title>
+{% endblock %}
+
+{% block content %}
+    <section class="recipe" id="{{dish.id}}">
+            <img src="{{dish.image}}" alt="{{dish.title}}">
+
+            <h3>{{dish.title}}</h3>
+            <p>{{dish.author}}</p>
+
+        <section class="ingredients">
+            <h2>Ingredientes <a class="text-hide">ESCONDER</a></h2>
+            <ul>
+                {% for ingredient in dish.ingredients  %}
+                <li>{{ingredient}}</li>
+                {% endfor %}
+            </ul>
+        </section>
+
+        <section class="preparation">
+            <h2>Modo de preparo <a class="text-hide">ESCONDER</a></h2>
+            <ol>
+                {% for preparation in dish.preparation  %}
+                <li>{{preparation}}</li>
+                {% endfor %}
+            </ol>
+        </section>
+
+        <section class="information">  
+            <h2>Informações adicionais <a class="text-hide" >ESCONDER</a></h2>
+                <p>{{dish.information}}</p>
+        </section>
+    </section>
+
+    <script src="script.js"></script>
+{% endblock %}
