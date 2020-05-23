@@ -6,6 +6,19 @@ Made with express and nunjucks - Foodfy 🍕
    <img src=".github/chef.png" width="200"/>
 </p>
 
+********************************
+
+<p align="center">
+<img src=".github/home-mobile.png" width="200"/> <img src=".github/recipes.png" width="200"/>
+</p>
+ 
+<p align="center">
+ <img src=".github/home.png" width="200"/>  <img src=".github/dish.png" width="200"/> 
+</p>
+
+********************************
+
+
 # Foodfy
 
 
