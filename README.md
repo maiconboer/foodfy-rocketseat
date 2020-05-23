@@ -3,7 +3,7 @@ Made with express and nunjucks - Foodfy 🍕
 
 
 <p align="center">
-   <img src="./public/assets/imgs/chef.png" width="200"/>
+   <img src=".github/chef.png" width="200"/>
 </p>
 
 # Foodfy
